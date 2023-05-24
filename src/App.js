@@ -63,7 +63,7 @@ function App() {
       </div>
 
       <footer className="Footer">
-        <a href="https://github.com/FancySun88/WeatherGuide-app">
+        <a href="https://github.com/FancySun88/react-weather-app">
           Open-source code
         </a>{" "}
         by Iryna Zhelezniak, 2023
