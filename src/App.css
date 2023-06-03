@@ -52,6 +52,7 @@ ul {
 }
 
 .Weather-temperature img {
+  margin-left: -20px;
   margin-top: -20px;
   padding: 0;
 }
@@ -73,11 +74,6 @@ strong {
 
 .units a {
   text-decoration: none;
-}
-.Weather-temperature img {
-  margin-top: 0px;
-  margin-left: -10px;
-  padding: 0;
 }
 
 .Search {
