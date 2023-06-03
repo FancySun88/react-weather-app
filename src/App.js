@@ -10,7 +10,7 @@ export default function App(props) {
     console.log(response.data);
     setWeatherData({
       loaded: true,
-      temperature: Math.round(response.data.main.temp),
+      temperature: response.data.main.temp,
       wind: Math.round(response.data.wind.speed),
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
