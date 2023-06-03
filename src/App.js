@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import Footer from "./Footer";
 import DefaultWeatherInfo from "./DefaultWeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./App.css";
 
@@ -60,13 +62,8 @@ export default function App(props) {
         </div>
 
         <DefaultWeatherInfo data={weatherData} />
-
-        <footer className="Footer">
-          <a href="https://github.com/FancySun88/WeatherGuide-app">
-            Open-source code
-          </a>{" "}
-          by Iryna Zhelezniak, 2023
-        </footer>
+        <WeatherForecast />
+        <Footer />
       </div>
     );
   } else {
@@ -74,12 +71,7 @@ export default function App(props) {
     return (
       <div>
         <h1>Loading...</h1>
-        <footer className="Footer">
-          <a href="https://github.com/FancySun88/WeatherGuide-app">
-            Open-source code
-          </a>{" "}
-          by Iryna Zhelezniak, 2023
-        </footer>
+        <Footer />
       </div>
     );
   }
